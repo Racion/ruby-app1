@@ -1,2 +1,106 @@
-<h1>StaticPages#ruby</h1>
-<p>Find me in app/views/static_pages/ruby.html.erb</p>
+<h1>Ruby</h1>
+<ul>
+  <li>
+    <h3>Interpolación de strings.</h3>
+    <p>La interpolación de string se hace mediante la sintaxis especial <code>#{}</code> y usualmente es usada para la construcción de strings con variables.</p>
+    <p>Ejemplo:</p>
+    <code>first_name = "Rafael" </code>
+    <br>
+    <code>
+      "#{first_name} Osorio"
+    </code>
+  </li>
+  <li>
+    <h3>Cómo se declara un array y cómo se adiciona un elemento al final
+      del array.</h3>
+    <p>Para declarar un array en Ruby utilizamos corchetes [], de igual forma se puede crear un arreglo a parti de un string mediante el metodo <code>split()</code> y le podemos pasar en los parentesis cual es el criterio mediante el cual lo queremos separar.</p>
+    <code>
+      #Definir un Array ruby
+      <br>
+      array = [elemnt, element, element, ...]
+      <br>
+      #Mediante un string y el metodo split
+      <br>
+      "Rafael Osorio".split(" ")
+      <br>
+      #Resultado
+      <br>
+      ["Rafael". "Osorio"]
+    </code>
+    <p>Para adiccionar un elemento al final de un array podemos usar el metodo <code>array.push(element)</code> o podemos usar el "shovel operator" <code>array << element</code>.</p>
+      </li>
+      <li>
+        <h3>Cómo se itera un array utilizando el comando each</h3>
+        <p>Para iterar un array metiante el comando each se puede lograr de 2 formas, lo mostrare con el siguiente codigo:</p>
+        <p>
+          <code>
+            #Con solo each
+            <br>
+            [1,2,3,4].each {|i| puts i}
+            <br>
+            #Con este codigo usando block nos imprime los numeros del 1 al 4
+            <br>
+            #Usando each y do 
+            <br>
+            [1,2,3,4].each do |i| 
+            <br>
+            puts i
+            <br>
+            end
+            <br>
+            #Para iterar el arreglo debemos apoyarnos con los block
+          </code>
+        </p>
+      </li>
+      <li>
+        <h3>Cómo se declara un hash.</h3>
+        <p>Un hash basicamente es un arreglo pero no se limita a indeces enteros, podemos usar indeces string como key para los elementos y para definirlos lo hacemos de las siguientes formas:</p>
+        <code>
+        </code>
+      </li>
+      <li>
+        <h3>Cómo se itera un hash utilizando el comando each.</h3>
+        <p>
+          Para iterar un hash usamos key y value, el key seria como el indice del arreglo y el value el elemento almacenado en ese indice.
+        </p>
+        <p>
+          <code>
+            user = {:name => "Rafael", :lastName => "Osorio"}
+            <br>
+            user.each {|key, value| puts "#{key.inspect} #{value.inspect}"}
+          </code>
+        </p>
+      </li>
+      <li>
+        <h3>¿Qué es un block en ruby? De un ejemplo de cómo utilizarlo.</h3>
+        <p>Un block en ruby es una funcion anonima pasado a metodos pueden estar entre {} o entre do / end y los argumentos van entre pipes <code>" | "</code>
+        </p>
+        <p>
+          Y para usarlo seria de la siguiente manera:
+          <br>
+          <code>
+            (1..5).each { |i| puts 2 * i }
+          </code>
+        </p>
+      </li>
+      <li>
+        <h3>¿Cuál es la convención en Ruby a la hora de nombrar variables?</h3>
+        <p>Para nombrar una variable dentro de ruby se recomienda usar la convencion <code>snake_case</code>, no usar caracteres especiales, evitar la variables de una sola letra y que sean descriptivas.</p>
+      </li>
+      <li>
+        <h3>¿Qué son attr reader, attr writer y attr accesor?¿Para qué sirven?</h3>
+        <p>
+          Los attr es una forma optimizada de definir variables instanceadas en una clase, para poder exponerlos en la aplicación, para poder lograr esto sin el uso de attr tendriamos que definir setters y getters para cada variable, los attr simplifican esto.
+        </p>
+        <p>
+          <ul>
+            <li><strong>attr_reader</strong> Nos sirve para definir un atributo que es de solo lectura en una clase.
+            </li>
+            <li>
+              <strong>attr_writer</strong> Este se usa para definir un atributo que es solo escribible.
+            </li>
+            <li><strong>attr_accessor</strong> En cambio si queremos que el atributo se pueda leer y escribir usamos este.</li>
+          </ul>
+        </p>
+      </li>
+    </ul>

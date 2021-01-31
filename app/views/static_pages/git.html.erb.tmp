@@ -60,6 +60,6 @@
   <li>
     <h3>He modificado dos archivos y quiero hacer un commit por cada
       uno de ellos, ¿cómo lo puedo hacer?</h3>
-      <p>Para commitear cada archivo lo que tenemos que hacer es <code>git add path_to_file</code> para agregar el archivo al staging area y luego <code>git commit -m 'Commit'</code> y de igual forma se haria para los demas archivos.</p>
+    <p>Para commitear cada archivo lo que tenemos que hacer es <code>git add path_to_file</code> para agregar el archivo al staging area y luego <code>git commit -m 'Commit'</code> y de igual forma se haria para los demas archivos.</p>
   </li>
 </ul>
