@@ -1,24 +1,18 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Ruby App
+First Homework for Hogaru Bootcamp
+### Contents
+* [Objective](#objective)
+* [Technologies](#technologies)
+* [Setup](#setup)
+### Objective 
+Create an app solving the question proposed in the Bootcamp and consolidating the adquired knowledge
+### Technologies
+This project is created with:
+* Ruby on Rails 6.1.0
+### Setup
+To run this project, you can do it locally cloning the repo and then run:
+```
+bundle install
+rails server or rails s
+```
