@@ -33,14 +33,14 @@
    border: 1px black solid;
    padding: 0 2px;
  }
- 
- .container {
-   margin: 0 20px 0 20px;
- }
 
- .nav-container {
-   margin: 0;
- }
+.container {
+  margin: 0 20px 0 20px;
+}
+
+.nav-container {
+  margin: 0;
+}
 
 .navegacion { 
   display: flex;
@@ -55,4 +55,5 @@
 .navegacion li{
   display: flex;
   align-items: center;
+  color: white;
 }
